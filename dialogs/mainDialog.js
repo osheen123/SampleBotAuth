@@ -12,10 +12,10 @@ const OAUTH_PROMPT = 'OAuthPrompt';
 
 class MainDialog extends LogoutDialog {
     constructor() {
-        super(MAIN_DIALOG, process.env.connectionName);
+        super(MAIN_DIALOG, 'MyCon');
 
         this.addDialog(new OAuthPrompt(OAUTH_PROMPT, {
-            connectionName: process.env.connectionName,
+            connectionName: 'MyCon',
             text: 'Please Sign In',
             title: 'Sign In',
             timeout: 300000
