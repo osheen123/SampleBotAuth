@@ -22,8 +22,8 @@ const { MainDialog } = require('./dialogs/mainDialog');
 // Create adapter.
 // See https://aka.ms/about-bot-adapter to learn more about adapters.
 const adapter = new BotFrameworkAdapter({
-    appId: process.env.MicrosoftAppId,
-    appPassword: process.env.MicrosoftAppPassword
+    appId: '46c7df94-fadf-4cad-a1ce-28a0cf0ab1ea',
+    appPassword: 'x~q_hidW1~3C.h5w0_Xpu8f16T-26dTTm_'
 });
 
 adapter.onTurnError = async (context, error) => {
